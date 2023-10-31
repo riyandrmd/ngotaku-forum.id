@@ -99,6 +99,7 @@ fetch('https://api.jikan.moe/v4/seasons/upcoming')
             if(res.data[b].trailer.embed_url != null && res.data[b].mal_id != 41467){
                 video.src = res.data[b].trailer.embed_url
                 video.setAttribute("allow","fullscreen")
+                //video.setAttribute("autoplay",0)
                 vidcards.classList.add("video")
                 vidcards.title = res.data[b].title;
                 title.innerText = res.data[b].title;
